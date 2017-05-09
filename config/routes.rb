@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   get "/show" => "students#show"
 
+  get "/twitter" => "students#twitter"
+
 
 end
