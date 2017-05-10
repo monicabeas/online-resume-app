@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   def show 
     @id = params[:id]
     @student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v1/students/#{@id}.json").body
-
+    @skills = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v1/skills.json").body
   end
 
   def twitter

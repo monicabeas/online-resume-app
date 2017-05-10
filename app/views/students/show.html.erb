@@ -62,9 +62,9 @@
 			
 			<div class="sectionContent">
 				<ul class="keySkills">
-				<!-- < @skills.each do |skill| >
-				< end > -->
-					<li>A Key Skill</li>
+				<% @skills.each do |skill| %>
+					<li><%= skill["skillName"] %></li>
+				<% end %>
 				</ul>
 			</div>
 			<div class="clear"></div>
