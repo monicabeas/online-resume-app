@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get "/index" => "students#index"
 
-  get "/show" => "students#show"
+  get "/show/:id" => "students#show"
 
   get "/twitter" => "students#twitter"
 

@@ -9,6 +9,8 @@ class StudentsController < ApplicationController
   end 
 
   def show 
+    @id = params[:id]
+    @student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v1/students/#{@id}.json").body
 
   end
 
