@@ -1,5 +1,17 @@
-<div class="new"<% @twitter.each do |tweet| %>
-<blockquote><%= tweet.text %> </blockquote>
+<div class="cool">
+<h1><div> @ Ladysappe  twitter </div></h1>
+</div>
+
+
+<% @tweets.each do |tweet| %>
+
+	<div class="tweet">
+
+		<div class="text">Text: <%= tweet.text %></div>
+		<br>
+		<div class="ttx">Favorites: <%= tweet.favorite_count %>
+		<br>
+		Retweet Count: <%= tweet.retweet_count %></div>
+	</div>
 
 <% end %>
-</div>
