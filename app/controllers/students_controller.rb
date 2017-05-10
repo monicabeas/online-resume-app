@@ -21,7 +21,7 @@ class StudentsController < ApplicationController
 		  config.access_token_secret = 	"TOSCK4O7uLyCF4M46xNFZFtqu8GnrbaampXPXh1wnTzeH"
 		end
   	
-    @twitter = client.user_timeline("icambron")
+    @twitter = client.user_timeline("ladysappe")
   	
   	
   end
