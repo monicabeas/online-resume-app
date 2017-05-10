@@ -23,7 +23,9 @@ class StudentsController < ApplicationController
 		  config.access_token_secret = 	"TOSCK4O7uLyCF4M46xNFZFtqu8GnrbaampXPXh1wnTzeH"
 		end
   	
-    @twitter = client.user_timeline("ladysappe")
+    @tweets = client.user_timeline("ladysappe")
+    @id = params[:id]
+    @student = Unirest.get("https://sheltered-chamber-15774.herokuapp.com/api/v1/students/#{@id}.json").body
   	
   	
   end
