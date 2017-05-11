@@ -14,7 +14,7 @@
 				<li>e: <a href="mailto:joe@bloggs.com" target="_blank">joe@bloggs.com</a></li>
 				<li>w: <a href="http://www.bloggs.com"><%= @student["site_url"]%></a></li>
 				<li>m: <%= @student["phone_number"]%></li>
-				<li> <a href="#" class="fa fa-twitter" aria-hidden="true"></a> <a href="#" class="fa fa-linkedin"></a> <a href="#" class="fa fa-github" aria-hidden="true"></a></li>
+				<li> <a href="/twitter/<%= @student['twitter'] %>" class="fa fa-twitter" aria-hidden="true"></a> <a href="https://www.linkedin.com" class="fa fa-linkedin"></a> <a href="https://github.com/" class="fa fa-github" aria-hidden="true"></a></li>
 
 			</ul>
 		</div>
